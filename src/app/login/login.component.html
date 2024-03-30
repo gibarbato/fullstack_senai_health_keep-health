@@ -1,0 +1,23 @@
+<h2>LOGIN</h2>
+
+<form (ngSubmit)="signIn()" #loginForm="ngForm">
+  <div>
+    <input
+      type="text"
+      name="loginUsuario"
+      [(ngModel)]="login.emailUsuario"
+      #email.Usuario="ngModel"
+      placeholder="Digite o seu email...">
+    <input
+      type="password"
+      name="passwordUsuario"
+      [(ngModel)]="login.senha"
+      #senha="ngModel"
+      placeholder="Digite a sua senha...">
+  </div>
+  <div>
+    <button type="submit">Entrar</button>
+    <button type="button" (click)="forgotSenha()">Esqueci a senha</button>
+    <a href="cadastro">Cadastrar-me</a>
+  </div>
+</form>
