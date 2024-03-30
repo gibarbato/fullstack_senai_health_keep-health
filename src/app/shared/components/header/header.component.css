@@ -1,0 +1,35 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: #ffaa00;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  }
+
+ nav {
+    display: flex;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: .3s;
+}
+.nav a:hover {
+  color: red;
+}
