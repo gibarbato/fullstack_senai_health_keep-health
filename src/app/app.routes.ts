@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { DietasComponent } from './dietas/dietas.component';
+import { DietDetailComponent } from './diet-detail/diet-detail.component';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,10 @@ export const routes: Routes = [
   },
   {
     path: 'dietas',
-    component: DietasComponent,
+    children: [
+      {path: '', component: DietasComponent},
+      {path: 'detail', component: DietDetailComponent},
+    ]
   },
+
 ];
